@@ -7,7 +7,6 @@ class PwGen
   class NotNumericError < ArgumentError; end
   attr_reader :length 
 
-
   Lowercase = ('a'..'z').to_a
   Uppercase = ('A'..'Z').to_a
   Numbers = (0..9).to_a
