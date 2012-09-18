@@ -11,7 +11,7 @@ class PwGen
   Uppercase = ('A'..'Z').to_a
   Numbers = (0..9).to_a
   Symbols = %q{`~@#%^&*()-_=+[]{}\|;:'",.<>/?}.split //
-  DefaultLen = 20
+  DefaultLen = 32
   ValidLengthRange = (6..256)
 
   def initialize(length=DefaultLen)

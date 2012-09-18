@@ -2,7 +2,7 @@ require './pwgen'
 
 describe PwGen do
   it 'should have sensible defaults' do
-    PwGen::DefaultLen.should == 20 
+    PwGen::DefaultLen.should == 32
     PwGen::Lowercase.uniq.length.should == 26
     PwGen::Uppercase.uniq.length.should == 26
     PwGen::Numbers.uniq.length.should == 10
@@ -23,7 +23,7 @@ describe PwGen do
   end
 
   it 'should create the object with the appropriate length value' do
-    PwGen.new.length.should == 20
+    PwGen.new.length.should == 32
     PwGen.new(200).length.should == 200
   end
 
